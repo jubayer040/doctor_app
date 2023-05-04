@@ -1,3 +1,4 @@
+import 'package:doctor_app/constants/home_const2.dart';
 import 'package:doctor_app/widgets/doc_details/docd_appbar.dart';
 import 'package:doctor_app/widgets/doc_details/docd_info_category.dart';
 import 'package:doctor_app/widgets/doc_details/docd_info_item1.dart';

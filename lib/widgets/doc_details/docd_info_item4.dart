@@ -1,5 +1,7 @@
+import 'package:doctor_app/models/doctor.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
+import 'package:doctor_app/constants/home_const2.dart';
 
 class DocDInfoItem4 extends StatelessWidget {
   const DocDInfoItem4({required this.doctor, super.key});

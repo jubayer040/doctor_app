@@ -1,4 +1,4 @@
-import 'package:doctor_app/constants/home_const.dart';
+import 'package:doctor_app/constants/home_const2.dart';
 import 'package:doctor_app/widgets/home_widgets/home_search_field.dart';
 import 'package:doctor_app/widgets/home_widgets/homeb_offer_container.dart';
 import 'package:flutter/material.dart';

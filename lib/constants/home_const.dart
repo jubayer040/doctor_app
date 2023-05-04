@@ -1,32 +1,16 @@
-import 'dart:math';
+import 'package:doctor_app/models/doctor.dart';
 import 'package:flutter/material.dart';
+import 'package:doctor_app/models/category.dart';
 
 const homeAppBar = Color(0xFF01204E);
 const homeSecondary = Color.fromARGB(255, 94, 111, 136);
 const ashhLight = Color(0xFFECF6FF);
-
-Gradient getHomeGradient(Color color) => LinearGradient(
-      begin: Alignment.topLeft,
-      end: Alignment.bottomRight,
-      colors: [
-        color.withOpacity(.9),
-        color.withOpacity(.6),
-        color.withOpacity(.4)
-      ],
-    );
-
 const homeTextColor = Color(0xFF292F51);
-Color randomColor() => Color(0xFFFFFFFF & Random().nextInt(0xFFFFFFFF));
 
 const bodyGradient = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
-  colors: [
-    Colors.white,
-    Colors.white,
-    Color(0xB3FFFFFF),
-    Color(0x62FFFFFF),
-  ],
+  colors: [Colors.white, Colors.white, Color(0xB3FFFFFF), Color(0x62FFFFFF)],
 );
 
 final bodyShadow = [
@@ -42,43 +26,16 @@ final bodyShadow = [
   ),
 ];
 
-class Category {
-  final String title;
-  final String img;
-  const Category({required this.img, required this.title});
-}
-
-class Doctor {
-  final String title;
-  final String subtitle;
-  final String img;
-  final String location;
-  final String schedule;
-  final double fees;
-  final double ratings;
-  final int review;
-
-  const Doctor({
-    required this.title,
-    required this.subtitle,
-    required this.img,
-    required this.location,
-    required this.schedule,
-    required this.fees,
-    this.ratings = 4.6,
-    required this.review,
-  });
-}
-
-const categories = [
-  Category(img: 'assets/category/cardiology.png', title: 'Cardiology'),
-  Category(img: 'assets/category/dentist.png', title: 'Dentist'),
-  Category(img: 'assets/category/dermathology.png', title: 'Dermathology'),
-  Category(img: 'assets/category/neurology.png', title: 'Neurology'),
-  Category(img: 'assets/category/nutrition.png', title: 'Nutrition'),
-  Category(img: 'assets/category/psychology.png', title: 'Psychology'),
-  Category(img: 'assets/category/pulmonary.png', title: 'Pulmonary'),
-  Category(img: 'assets/category/urology.png', title: 'Urology'),
+final categories = [
+  const Category(img: 'assets/category/cardiology.png', title: 'Cardiology'),
+  const Category(img: 'assets/category/dentist.png', title: 'Dentist'),
+  const Category(
+      img: 'assets/category/dermathology.png', title: 'Dermathology'),
+  const Category(img: 'assets/category/neurology.png', title: 'Neurology'),
+  const Category(img: 'assets/category/nutrition.png', title: 'Nutrition'),
+  const Category(img: 'assets/category/psychology.png', title: 'Psychology'),
+  const Category(img: 'assets/category/pulmonary.png', title: 'Pulmonary'),
+  const Category(img: 'assets/category/urology.png', title: 'Urology'),
 ];
 
 const doctors = [
@@ -128,56 +85,3 @@ const doctors = [
     review: 3,
   ),
 ];
-
-Widget getTitleSeeAllText(String title, Function onTap) => Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          title,
-          style: const TextStyle(
-            color: homeTextColor,
-            fontSize: 15,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        TextButton(
-          onPressed: () => onTap,
-          child: const Text(
-            'See More',
-            style: TextStyle(
-              color: Colors.cyan,
-              fontWeight: FontWeight.w300,
-              fontSize: 10,
-            ),
-          ),
-        ),
-      ],
-    );
-
-Widget getDoctorCategory(String title) => Container(
-      padding: const EdgeInsets.only(left: 7, top: 2.5, bottom: 2.5, right: 14),
-      margin: const EdgeInsets.only(bottom: 5),
-      decoration: const BoxDecoration(
-        color: homeAppBar,
-        borderRadius: BorderRadius.horizontal(
-          left: Radius.circular(4),
-          right: Radius.circular(14),
-        ),
-      ),
-      child: Text(
-        title,
-        style: const TextStyle(fontSize: 10, color: Colors.white),
-      ),
-    );
-
-Widget getTitleText(String title, Color color) => Text(
-      title,
-      overflow: TextOverflow.ellipsis,
-      style: TextStyle(fontWeight: FontWeight.bold, color: color),
-    );
-
-Widget getSubTitleText(String title, Color color) => Text(
-      title,
-      overflow: TextOverflow.ellipsis,
-      style: TextStyle(fontSize: 9.5, color: color),
-    );

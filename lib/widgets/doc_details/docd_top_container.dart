@@ -1,5 +1,7 @@
+import 'package:doctor_app/models/doctor.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
+import 'package:doctor_app/constants/home_const2.dart';
 
 class DocDTopContainer extends StatelessWidget {
   const DocDTopContainer({super.key, required this.doctor});
