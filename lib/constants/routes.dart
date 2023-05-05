@@ -1,5 +1,6 @@
 import 'package:doctor_app/screens/doc_details_screen.dart';
 import 'package:doctor_app/screens/home_screen.dart';
+import 'package:doctor_app/screens/video_call_screen.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
@@ -11,6 +12,9 @@ class Routes {
       case DocDetailsScreen.routeName:
         return MaterialPageRoute(
             builder: (context) => const DocDetailsScreen());
+
+      case VideoCallScreen.routeName:
+        return MaterialPageRoute(builder: (context) => const VideoCallScreen());
       default:
         null;
     }

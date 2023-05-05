@@ -1,5 +1,6 @@
 import 'package:doctor_app/widgets/video_call_widgets/vidc_buttons.dart';
-import 'package:doctor_app/widgets/video_call_widgets/vidc_caller.dart';
+import 'package:doctor_app/widgets/video_call_widgets/vidc_receiver.dart';
+import 'package:doctor_app/widgets/video_call_widgets/vidc_user.dart';
 import 'package:flutter/material.dart';
 
 class VideoCallScreen extends StatelessWidget {
@@ -9,19 +10,18 @@ class VideoCallScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+    final onVideo = ValueNotifier<bool>(false);
     return Scaffold(
       body: Stack(
         fit: StackFit.expand,
         clipBehavior: Clip.none,
         children: [
           // recenvier
-          Positioned.fill(
-            child: Image.asset('assets/doctor.jpg', fit: BoxFit.cover),
-          ),
+          VideoCReceiver(onVideo: onVideo),
           // buttons botton
           VidCButtons(size: size),
           // caller
-          VidCCaller(size: size),
+          VidCUser(size: size, onVideo: onVideo),
         ],
       ),
     );
