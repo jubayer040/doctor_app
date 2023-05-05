@@ -15,7 +15,7 @@ class VideoCReceiver extends StatelessWidget {
   }
 
   Widget _backReceiverVideo() => Positioned.fill(
-        child: Image.asset('assets/doctor.jpg', fit: BoxFit.cover),
+        child: Image.asset('assets/doctor/doc2.png', fit: BoxFit.cover),
       );
 
   Widget _backReceiverImg() => Positioned.fill(
@@ -35,8 +35,8 @@ class VideoCReceiver extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: const [
               CircleAvatar(
-                radius: 28,
-                backgroundImage: AssetImage('assets/user.jpg'),
+                radius: 70,
+                backgroundImage: AssetImage('assets/doctor/doc2.png'),
               ),
               SizedBox(height: 20),
               Text(

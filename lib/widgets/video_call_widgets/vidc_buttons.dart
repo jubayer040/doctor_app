@@ -3,8 +3,10 @@ import 'package:doctor_app/widgets/video_call_widgets/vidc_video_button.dart';
 import 'package:flutter/material.dart';
 
 class VidCButtons extends StatelessWidget {
-  const VidCButtons({super.key, required this.size});
+  const VidCButtons({super.key, required this.onVideo, required this.size});
   final Size size;
+  final ValueNotifier onVideo;
+
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -49,7 +51,7 @@ class VidCButtons extends StatelessWidget {
                 ),
               ),
             ),
-            const VidCVideoButton(),
+            VidCVideoButton(onVideo: onVideo),
             const SizedBox(width: 50),
           ],
         ),

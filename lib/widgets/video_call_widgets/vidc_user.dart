@@ -39,7 +39,7 @@ class _VidCUserState extends State<VidCUser> {
               borderRadius: BorderRadius.circular(13),
               border: Border.all(color: const Color(0xFFBDBDBD)),
               image: const DecorationImage(
-                image: AssetImage('assets/user.jpg'),
+                image: AssetImage('assets/2.jpg'),
                 fit: BoxFit.cover,
               ),
             ),

@@ -19,7 +19,7 @@ class VideoCallScreen extends StatelessWidget {
           // recenvier
           VideoCReceiver(onVideo: onVideo),
           // buttons botton
-          VidCButtons(size: size),
+          VidCButtons(size: size, onVideo: onVideo),
           // caller
           VidCUser(size: size, onVideo: onVideo),
         ],
