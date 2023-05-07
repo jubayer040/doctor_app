@@ -1,10 +1,10 @@
 import 'package:doctor_app/constants/home_const2.dart';
-import 'package:doctor_app/widgets/doc_details/docd_appbar.dart';
-import 'package:doctor_app/widgets/doc_details/docd_info_category.dart';
-import 'package:doctor_app/widgets/doc_details/docd_info_item1.dart';
-import 'package:doctor_app/widgets/doc_details/docd_info_item2.dart';
-import 'package:doctor_app/widgets/doc_details/docd_info_item4.dart';
-import 'package:doctor_app/widgets/doc_details/docd_top_container.dart';
+import 'package:doctor_app/widgets/doc_details_widgets/docd_appbar.dart';
+import 'package:doctor_app/widgets/doc_details_widgets/docd_info_category.dart';
+import 'package:doctor_app/widgets/doc_details_widgets/docd_info_item1.dart';
+import 'package:doctor_app/widgets/doc_details_widgets/docd_info_item2.dart';
+import 'package:doctor_app/widgets/doc_details_widgets/docd_info_item4.dart';
+import 'package:doctor_app/widgets/doc_details_widgets/docd_top_container.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
 

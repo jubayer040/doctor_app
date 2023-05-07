@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/home_const2.dart';
 
-class HomeSearchField extends StatelessWidget {
-  const HomeSearchField({super.key});
+class DocSearchField extends StatelessWidget {
+  const DocSearchField({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,17 +34,9 @@ class HomeSearchField extends StatelessWidget {
             alignment: Alignment.center,
             decoration: BoxDecoration(
               gradient: getHomeGradient(homeAppBar),
-              borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(8),
-                topRight: Radius.circular(50),
-                bottomRight: Radius.circular(8),
-                bottomLeft: Radius.circular(8),
-              ),
+              borderRadius: BorderRadius.circular(18),
             ),
-            child: const Icon(
-              CupertinoIcons.search,
-              color: Colors.white,
-            ),
+            child: const Icon(CupertinoIcons.search, color: Colors.white),
           ),
         ],
       ),

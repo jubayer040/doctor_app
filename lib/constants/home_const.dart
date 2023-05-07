@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:doctor_app/models/category.dart';
 
 const homeAppBar = Color(0xFF01204E);
+const homePrimaryColor = Color(0xFF80DDEA);
 const homeSecondary = Color.fromARGB(255, 94, 111, 136);
 const ashhLight = Color(0xFFECF6FF);
 const homeTextColor = Color(0xFF292F51);
