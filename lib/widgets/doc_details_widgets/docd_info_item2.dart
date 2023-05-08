@@ -16,7 +16,7 @@ class DocDInfoItem2 extends StatelessWidget {
     final eveningList = ['7:00pm', '7:30pm', '8:00pm', '8:30pm', '9:00pm'];
     return SingleChildScrollView(
       child: Padding(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

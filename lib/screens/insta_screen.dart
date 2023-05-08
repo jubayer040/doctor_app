@@ -20,6 +20,7 @@ class InstaScreen extends StatelessWidget {
       DocDInfoItem2(selectedDate: selectedDate, selectedSlot: selectedSlot),
       DocDInfoItem3(doctor: doctors[0]),
     ];
+    final f = TimeOfDay.now();
     return Scaffold(
       backgroundColor: ashhLight,
       body: DefaultTabController(

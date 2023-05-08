@@ -11,7 +11,7 @@ class DocDInfoItem3 extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width * .45;
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: SingleChildScrollView(
         child: Column(
           children: [
