@@ -7,50 +7,53 @@ class DocDInfoItem1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'I would like to show the world today as an ant sees it and tomorrow as the moon sees it.' *
-              2,
-        ),
-        const SizedBox(height: 20),
-        const Text(
-          'Education History',
-          style: TextStyle(
-            color: homeTextColor,
-            fontSize: 15,
-            fontWeight: FontWeight.bold,
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'I would like to show the world today as an ant sees it and tomorrow as the moon sees it.' *
+                2,
           ),
-        ),
-        const SizedBox(height: 15),
-        _getEducationHistory('Diploma in Pharmacy   (2020-2023)'),
-        _getEducationHistory('FCPS   (2018-2020)'),
-        _getEducationHistory('MBBS   (2015-2018)'),
-        const SizedBox(height: 14),
-        const Text(
-          'Specializations',
-          style: TextStyle(
-            color: homeTextColor,
-            fontSize: 15,
-            fontWeight: FontWeight.bold,
+          const SizedBox(height: 20),
+          const Text(
+            'Education History',
+            style: TextStyle(
+              color: homeTextColor,
+              fontSize: 15,
+              fontWeight: FontWeight.bold,
+            ),
           ),
-        ),
-        const SizedBox(height: 15),
-        Wrap(
-          children: [
-            getDoctorCategory('Heart Sergery'),
-            const SizedBox(width: 10),
-            getDoctorCategory('Heart Mobility'),
-            const SizedBox(width: 10),
-            getDoctorCategory('Heart Pumb Ring'),
-            const SizedBox(width: 10),
-            getDoctorCategory('Heart Pumb Ring'),
-            const SizedBox(width: 10),
-            getDoctorCategory('Heart Pumb Ring'),
-          ],
-        ),
-      ],
+          const SizedBox(height: 15),
+          _getEducationHistory('Diploma in Pharmacy   (2020-2023)'),
+          _getEducationHistory('FCPS   (2018-2020)'),
+          _getEducationHistory('MBBS   (2015-2018)'),
+          const SizedBox(height: 14),
+          const Text(
+            'Specializations',
+            style: TextStyle(
+              color: homeTextColor,
+              fontSize: 15,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 15),
+          Wrap(
+            children: [
+              getDoctorCategory('Heart Sergery'),
+              const SizedBox(width: 10),
+              getDoctorCategory('Heart Mobility'),
+              const SizedBox(width: 10),
+              getDoctorCategory('Heart Pumb Ring'),
+              const SizedBox(width: 10),
+              getDoctorCategory('Heart Pumb Ring'),
+              const SizedBox(width: 10),
+              getDoctorCategory('Heart Pumb Ring'),
+            ],
+          ),
+        ],
+      ),
     );
   }
 
