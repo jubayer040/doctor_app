@@ -28,15 +28,15 @@ final bodyShadow = [
 ];
 
 final categories = [
-  const Category(img: 'assets/category/cardiology.png', title: 'Cardiology'),
-  const Category(img: 'assets/category/dentist.png', title: 'Dentist'),
   const Category(
-      img: 'assets/category/dermathology.png', title: 'Dermathology'),
-  const Category(img: 'assets/category/neurology.png', title: 'Neurology'),
-  const Category(img: 'assets/category/nutrition.png', title: 'Nutrition'),
-  const Category(img: 'assets/category/psychology.png', title: 'Psychology'),
-  const Category(img: 'assets/category/pulmonary.png', title: 'Pulmonary'),
-  const Category(img: 'assets/category/urology.png', title: 'Urology'),
+      img: 'assets/category/category_selected.png', title: 'Cardiology'),
+  const Category(img: 'assets/category/category.png', title: 'Dentist'),
+  const Category(img: 'assets/category/category.png', title: 'Dermathology'),
+  const Category(img: 'assets/category/category.png', title: 'Neurology'),
+  const Category(img: 'assets/category/category.png', title: 'Nutrition'),
+  const Category(img: 'assets/category/category.png', title: 'Psychology'),
+  const Category(img: 'assets/category/category.png', title: 'Pulmonary'),
+  const Category(img: 'assets/category/category.png', title: 'Urology'),
 ];
 
 const doctors = [

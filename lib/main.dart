@@ -1,5 +1,5 @@
 import 'package:doctor_app/constants/routes.dart';
-import 'package:doctor_app/screens/home_screen.dart';
+import 'package:doctor_app/screens/insta_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepPurple),
       onGenerateRoute: Routes.onGenerateRoute,
-      initialRoute: HomeScreen.routeName,
+      initialRoute: InstaScreen.routeName,
     );
   }
 }

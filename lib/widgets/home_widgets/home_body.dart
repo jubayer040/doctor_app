@@ -1,4 +1,4 @@
-import 'package:doctor_app/constants/home_const2.dart';
+import 'package:doctor_app/constants/home_const_get.dart';
 import 'package:doctor_app/widgets/common_widgets/home_search_field.dart';
 import 'package:doctor_app/widgets/home_widgets/homeb_offer_container.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +22,7 @@ class HomeBody extends StatelessWidget {
             const HomeBOfferContainer(),
             const SizedBox(height: 20),
             // categories text
-            getTitleSeeAllText('OUR SERVICE', () {}),
+            getTitleSeeAllText('OUR SERVICES', () {}),
           ],
         ),
       ),

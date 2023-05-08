@@ -1,10 +1,10 @@
 import 'package:doctor_app/models/doctor.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
-import 'package:doctor_app/constants/home_const2.dart';
+import 'package:doctor_app/constants/home_const_get.dart';
 
-class DocDInfoItem4 extends StatelessWidget {
-  const DocDInfoItem4({required this.doctor, super.key});
+class DocDInfoItem3 extends StatelessWidget {
+  const DocDInfoItem3({required this.doctor, super.key});
   final Doctor doctor;
 
   @override

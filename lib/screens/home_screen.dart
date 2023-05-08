@@ -1,4 +1,4 @@
-import 'package:doctor_app/constants/home_const2.dart';
+import 'package:doctor_app/constants/home_const_get.dart';
 import 'package:doctor_app/widgets/home_widgets/home_appbar.dart';
 import 'package:doctor_app/widgets/home_widgets/home_body.dart';
 import 'package:doctor_app/widgets/home_widgets/home_category_grid.dart';
@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, top: 25),
-              child: getTitleSeeAllText('TOP DOCTOR', () {}),
+              child: getTitleSeeAllText('TOP DOCTORS', () {}),
             ),
           ),
           const HomeDoctorList(),

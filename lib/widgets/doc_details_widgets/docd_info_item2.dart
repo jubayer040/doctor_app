@@ -1,7 +1,7 @@
 import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
-import 'package:doctor_app/constants/home_const2.dart';
+import 'package:doctor_app/constants/home_const_get.dart';
 
 class DocDInfoItem2 extends StatelessWidget {
   const DocDInfoItem2(

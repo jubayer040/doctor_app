@@ -1,7 +1,7 @@
 import 'package:doctor_app/models/doctor.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
-import 'package:doctor_app/constants/home_const2.dart';
+import 'package:doctor_app/constants/home_const_get.dart';
 
 class DocDTopContainer extends StatelessWidget {
   const DocDTopContainer({super.key, required this.doctor});
@@ -56,7 +56,8 @@ class DocDTopContainer extends StatelessWidget {
                     const Text('5+ years'),
                   ],
                 ),
-                Container(height: 35, width: 2, color: const Color(0xFFD6D6D6)),
+                Container(
+                    height: 35, width: .6, color: const Color(0xFFD6D6D6)),
                 Column(
                   children: [
                     getSubTitleText('Reviews', const Color(0xFFBDBDBD)),
@@ -64,7 +65,8 @@ class DocDTopContainer extends StatelessWidget {
                     const Text('★4.5 (20)'),
                   ],
                 ),
-                Container(height: 35, width: 2, color: const Color(0xFFD6D6D6)),
+                Container(
+                    height: 35, width: .6, color: const Color(0xFFD6D6D6)),
                 Column(
                   children: [
                     getSubTitleText('Location', const Color(0xFFBDBDBD)),
