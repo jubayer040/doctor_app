@@ -20,7 +20,6 @@ class DocSearchField extends StatelessWidget {
         children: [
           Expanded(
             child: TextField(
-              // scrollPadding: ,
               controller: controller,
               autofocus: false,
               textInputAction: TextInputAction.search,

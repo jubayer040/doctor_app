@@ -1,6 +1,5 @@
 import 'package:doctor_app/screens/doc_details_screen.dart';
 import 'package:doctor_app/screens/home_screen.dart';
-import 'package:doctor_app/screens/insta_screen.dart';
 import 'package:doctor_app/screens/message_screen.dart';
 import 'package:doctor_app/screens/video_call_screen.dart';
 import 'package:flutter/material.dart';
@@ -21,8 +20,6 @@ class Routes {
       case MessageScreen.routeName:
         return MaterialPageRoute(builder: (context) => const MessageScreen());
 
-      case InstaScreen.routeName:
-        return MaterialPageRoute(builder: (context) => const InstaScreen());
       default:
         null;
     }

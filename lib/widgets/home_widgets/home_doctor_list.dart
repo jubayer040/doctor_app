@@ -1,4 +1,4 @@
-import 'package:doctor_app/screens/insta_screen.dart';
+import 'package:doctor_app/screens/doc_details_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/home_const_get.dart';
@@ -11,7 +11,7 @@ class HomeDoctorList extends StatelessWidget {
     return SliverList(
       delegate: SliverChildBuilderDelegate(
         (context, i) => InkWell(
-          onTap: () => Navigator.pushNamed(context, InstaScreen.routeName),
+          onTap: () => Navigator.pushNamed(context, DocDetailsScreen.routeName),
           child: Container(
             height: 125,
             margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
