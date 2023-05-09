@@ -8,6 +8,7 @@ class DocSearchField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = TextEditingController();
     return Container(
       height: 53,
       decoration: BoxDecoration(
@@ -17,17 +18,26 @@ class DocSearchField extends StatelessWidget {
       ),
       child: Row(
         children: [
-          const SizedBox(width: 20),
-          const Text(
-            'Search doctor',
-            style: TextStyle(
-              color: Color(0xFFE0E0E0),
-              fontSize: 14,
-              letterSpacing: 1.3,
-              wordSpacing: 1.5,
+          Expanded(
+            child: TextField(
+              // scrollPadding: ,
+              controller: controller,
+              autofocus: false,
+              textInputAction: TextInputAction.search,
+              textCapitalization: TextCapitalization.words,
+              decoration: const InputDecoration(
+                contentPadding: EdgeInsets.symmetric(horizontal: 20),
+                border: InputBorder.none,
+                hintText: 'Search doctor',
+                hintStyle: TextStyle(
+                  color: Color(0xFFE0E0E0),
+                  fontSize: 14,
+                  letterSpacing: 1.3,
+                  wordSpacing: 1.5,
+                ),
+              ),
             ),
           ),
-          const Spacer(),
           Container(
             margin: const EdgeInsets.all(4.5),
             width: 50,
