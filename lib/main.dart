@@ -1,3 +1,4 @@
+import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/routes.dart';
 import 'package:doctor_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(primarySwatch: Colors.deepPurple),
+        theme: ThemeData(
+          primarySwatch: Colors.deepPurple,
+          scaffoldBackgroundColor: ashhLight,
+        ),
         onGenerateRoute: Routes.onGenerateRoute,
         initialRoute: HomeScreen.routeName,
       ),

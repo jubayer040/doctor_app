@@ -1,5 +1,5 @@
 import 'package:doctor_app/constants/home_const_get.dart';
-import 'package:doctor_app/widgets/common_widgets/home_search_field.dart';
+import 'package:doctor_app/widgets/common_widgets/doc_search_field.dart';
 import 'package:doctor_app/widgets/home_widgets/homeb_offer_container.dart';
 import 'package:flutter/material.dart';
 
