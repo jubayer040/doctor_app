@@ -17,10 +17,7 @@ class ProfileScreen extends StatelessWidget {
         elevation: 10,
         backgroundColor: ashhLight,
         leading: getBackButton(context),
-        title: const Text(
-          'User Profile',
-          style: TextStyle(color: homeAppBar),
-        ),
+        title: const Text('User Profile', style: TextStyle(color: homeAppBar)),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -62,7 +59,7 @@ class ProfileScreen extends StatelessWidget {
                 onTap: () {},
                 title: 'Delete Account',
               ),
-              const SizedBox(height: 25),
+              const SizedBox(height: 20),
             ],
           ),
         ),

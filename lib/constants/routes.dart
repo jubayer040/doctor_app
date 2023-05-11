@@ -1,3 +1,4 @@
+import 'package:doctor_app/screens/dashboard_screen.dart';
 import 'package:doctor_app/screens/doc_details_screen.dart';
 import 'package:doctor_app/screens/doc_screen.dart';
 import 'package:doctor_app/screens/home_screen.dart';
@@ -27,6 +28,9 @@ class Routes {
 
       case ProfileScreen.routeName:
         return MaterialPageRoute(builder: (context) => const ProfileScreen());
+
+      case DashBoardScreen.routeName:
+        return MaterialPageRoute(builder: (context) => const DashBoardScreen());
 
       default:
         null;

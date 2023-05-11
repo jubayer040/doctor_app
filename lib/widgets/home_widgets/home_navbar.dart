@@ -1,4 +1,5 @@
 import 'package:doctor_app/constants/home_const.dart';
+import 'package:doctor_app/screens/dashboard_screen.dart';
 import 'package:doctor_app/screens/doc_screen.dart';
 import 'package:doctor_app/screens/home_screen.dart';
 import 'package:doctor_app/screens/message_screen.dart';
@@ -48,6 +49,12 @@ class HomeNavBar extends StatelessWidget {
               Navigator.pushNamed(context, ProfileScreen.routeName);
             },
             icon: const Icon(Icons.people_outline, color: homeSecondary),
+          ),
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, DashBoardScreen.routeName);
+            },
+            icon: const Icon(Icons.dashboard_outlined, color: homeSecondary),
           ),
         ],
       ),
