@@ -40,6 +40,10 @@ class PofileTopBody extends StatelessWidget {
                   child: CircleAvatar(
                     radius: 56,
                     backgroundImage: AssetImage('assets/2.jpg'),
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Icon(Icons.flip_camera_ios_outlined, size: 30),
+                    ),
                   ),
                 ),
                 SizedBox(height: 10),
