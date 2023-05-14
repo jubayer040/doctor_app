@@ -1,7 +1,7 @@
 import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/home_const_get.dart';
-import 'package:doctor_app/widgets/dashboard_widgets/dash_details_body.dart';
-import 'package:doctor_app/widgets/dashboard_widgets/dash_top_container.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/dashboard_widgets/dash_details_body.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/dashboard_widgets/dash_top_container.dart';
 import 'package:flutter/material.dart';
 
 class DashBoardScreen extends StatelessWidget {
