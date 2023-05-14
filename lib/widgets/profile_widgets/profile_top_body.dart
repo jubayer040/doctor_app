@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:vector_math/vector_math.dart' as math;
 
 class PofileTopBody extends StatelessWidget {
-  const PofileTopBody({super.key});
+  const PofileTopBody({super.key, required this.img});
+  final String img;
 
   @override
   Widget build(BuildContext context) {
@@ -32,23 +33,23 @@ class PofileTopBody extends StatelessWidget {
             bottom: size.height * .1,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 // image
                 CircleAvatar(
                   radius: 60,
                   backgroundColor: Colors.white,
                   child: CircleAvatar(
                     radius: 56,
-                    backgroundImage: AssetImage('assets/2.jpg'),
-                    child: Align(
+                    backgroundImage: AssetImage(img),
+                    child: const Align(
                       alignment: Alignment.bottomCenter,
                       child: Icon(Icons.flip_camera_ios_outlined, size: 30),
                     ),
                   ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 // title
-                Text(
+                const Text(
                   'Jb Jason',
                   style: TextStyle(
                     color: homeTextColor,
@@ -58,7 +59,7 @@ class PofileTopBody extends StatelessWidget {
                   ),
                 ),
                 // sub-title
-                Text('@jason', style: TextStyle(color: homeTextColor)),
+                const Text('@jason', style: TextStyle(color: homeTextColor)),
               ],
             ),
           ),

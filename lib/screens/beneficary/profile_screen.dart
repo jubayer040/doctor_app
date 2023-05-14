@@ -23,7 +23,7 @@ class ProfileScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              const PofileTopBody(),
+              const PofileTopBody(img: 'assets/2.jpg'),
               ProfileItem(
                 icon: Icons.nature_people_outlined,
                 onTap: () {},

@@ -1,10 +1,10 @@
 import 'package:doctor_app/constants/home_const.dart';
-import 'package:doctor_app/screens/dashboard_screen.dart';
-import 'package:doctor_app/screens/doc_screen.dart';
-import 'package:doctor_app/screens/home_screen.dart';
-import 'package:doctor_app/screens/message_screen.dart';
-import 'package:doctor_app/screens/profile_screen.dart';
-import 'package:doctor_app/screens/video_call_screen.dart';
+import 'package:doctor_app/screens/beneficary/dashboard_screen.dart';
+import 'package:doctor_app/screens/beneficary/doc_screen.dart';
+import 'package:doctor_app/screens/beneficary/home_screen.dart';
+import 'package:doctor_app/screens/beneficary/message_screen.dart';
+import 'package:doctor_app/screens/beneficary/profile_screen.dart';
+import 'package:doctor_app/screens/beneficary/video_call_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeNavBar extends StatelessWidget {

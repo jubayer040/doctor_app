@@ -1,4 +1,4 @@
-import 'package:doctor_app/screens/doc_details_screen.dart';
+import 'package:doctor_app/screens/beneficary/doc_details_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/home_const_get.dart';

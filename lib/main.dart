@@ -1,6 +1,6 @@
 import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/routes.dart';
-import 'package:doctor_app/screens/home_screen.dart';
+import 'package:doctor_app/screens/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: ashhLight,
         ),
         onGenerateRoute: Routes.onGenerateRoute,
-        initialRoute: HomeScreen.routeName,
+        initialRoute: Home.routeName,
       ),
     );
   }
