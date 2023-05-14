@@ -1,7 +1,6 @@
-import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/home_const_get.dart';
-import 'package:doctor_app/widgets/profile_widgets/profile_item.dart';
-import 'package:doctor_app/widgets/profile_widgets/profile_top_body.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/profile_widgets/profile_item.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/profile_widgets/profile_top_body.dart';
 import 'package:flutter/material.dart';
 
 class PProfileScreen extends StatelessWidget {
@@ -11,13 +10,7 @@ class PProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        elevation: 10,
-        backgroundColor: ashhLight,
-        leading: getBackButton(context),
-        title: const Text('User Profile', style: TextStyle(color: homeAppBar)),
-      ),
+      appBar: getAppbar(context, "Profile", []),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(

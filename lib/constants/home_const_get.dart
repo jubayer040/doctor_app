@@ -91,6 +91,16 @@ Container getButtonStyle(Widget child) => Container(
       child: child,
     );
 
+AppBar getAppbar(BuildContext context, String title, List<Widget> action) =>
+    AppBar(
+      centerTitle: true,
+      elevation: 10,
+      backgroundColor: ashhLight,
+      leading: getBackButton(context),
+      title: const Text('User Profile', style: TextStyle(color: homeAppBar)),
+      actions: action,
+    );
+
 IconButton getBackButton(BuildContext context) => IconButton(
       onPressed: () => Navigator.pop(context),
       icon: const Icon(Icons.arrow_back_ios_new, color: homeAppBar),

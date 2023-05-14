@@ -1,6 +1,6 @@
 import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/widgets/common_widgets/doc_search_field.dart';
-import 'package:doctor_app/widgets/message_widgets/message_listitem.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/message_widgets/message_listitem.dart';
 import 'package:flutter/material.dart';
 
 class MessageScreen extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/widgets/common_widgets/doc_search_field.dart';
-import 'package:doctor_app/widgets/doc_widgets/doc_filter_icon.dart';
-import 'package:doctor_app/widgets/home_widgets/home_doctor_list.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/doc_widgets/doc_filter_icon.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/home_widgets/home_doctor_list.dart';
 import 'package:flutter/material.dart';
 
 class DoctorsScreen extends StatelessWidget {

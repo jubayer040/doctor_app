@@ -1,6 +1,6 @@
 import 'package:doctor_app/screens/beneficary/home_screen.dart';
 import 'package:doctor_app/screens/provider/p_home_screen.dart';
-import 'package:doctor_app/widgets/profile_widgets/profile_item.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/profile_widgets/profile_item.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {

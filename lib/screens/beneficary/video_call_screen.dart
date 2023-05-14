@@ -1,6 +1,6 @@
-import 'package:doctor_app/widgets/video_call_widgets/vidc_buttons.dart';
-import 'package:doctor_app/widgets/video_call_widgets/vidc_receiver.dart';
-import 'package:doctor_app/widgets/video_call_widgets/vidc_user.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/video_call_widgets/vidc_buttons.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/video_call_widgets/vidc_receiver.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/video_call_widgets/vidc_user.dart';
 import 'package:flutter/material.dart';
 
 class VideoCallScreen extends StatelessWidget {

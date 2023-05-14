@@ -1,5 +1,5 @@
-import 'package:doctor_app/widgets/video_call_widgets/vidc_mute_button.dart';
-import 'package:doctor_app/widgets/video_call_widgets/vidc_video_button.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/video_call_widgets/vidc_mute_button.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/video_call_widgets/vidc_video_button.dart';
 import 'package:flutter/material.dart';
 
 class VidCButtons extends StatelessWidget {

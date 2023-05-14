@@ -1,9 +1,9 @@
 import 'package:doctor_app/constants/home_const_get.dart';
-import 'package:doctor_app/widgets/home_widgets/home_appbar.dart';
-import 'package:doctor_app/widgets/home_widgets/home_body.dart';
-import 'package:doctor_app/widgets/home_widgets/home_category_grid.dart';
-import 'package:doctor_app/widgets/home_widgets/home_doctor_list.dart';
-import 'package:doctor_app/widgets/home_widgets/home_navbar.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/home_widgets/home_appbar.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/home_widgets/home_body.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/home_widgets/home_category_grid.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/home_widgets/home_doctor_list.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/home_widgets/home_navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
 

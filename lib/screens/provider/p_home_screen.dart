@@ -1,5 +1,6 @@
 import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/home_const_get.dart';
+import 'package:doctor_app/screens/provider/p_patients_screen.dart';
 import 'package:doctor_app/screens/provider/p_profile_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -36,13 +37,12 @@ class PHomeScreen extends StatelessWidget {
               icon: const Icon(Icons.medical_information_outlined,
                   color: homeSecondary),
             ),
-            // IconButton(
-            //   onPressed: () {
-            //     Navigator.pushNamed(context, MessageScreen.routeName);
-            //   },
-            //   icon:
-            //       const Icon(Icons.schedule_send_outlined, color: homeSecondary),
-            // ),
+            IconButton(
+              onPressed: () {
+                Navigator.pushNamed(context, PPatientsScreen.routeName);
+              },
+              icon: const Icon(Icons.pattern_outlined, color: homeSecondary),
+            ),
             // IconButton(
             //   onPressed: () {
             //     Navigator.pushNamed(context, DoctorsScreen.routeName);

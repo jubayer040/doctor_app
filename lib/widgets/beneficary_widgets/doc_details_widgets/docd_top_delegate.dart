@@ -1,5 +1,5 @@
 import 'package:doctor_app/constants/home_const.dart';
-import 'package:doctor_app/widgets/doc_details_widgets/docd_top_container.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/doc_details_widgets/docd_top_container.dart';
 import 'package:flutter/material.dart';
 
 class DocDTopDelegate extends SliverPersistentHeaderDelegate {

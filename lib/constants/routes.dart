@@ -7,6 +7,7 @@ import 'package:doctor_app/screens/beneficary/profile_screen.dart';
 import 'package:doctor_app/screens/beneficary/video_call_screen.dart';
 import 'package:doctor_app/screens/home.dart';
 import 'package:doctor_app/screens/provider/p_home_screen.dart';
+import 'package:doctor_app/screens/provider/p_patients_screen.dart';
 import 'package:doctor_app/screens/provider/p_profile_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,7 @@ class Routes {
       case Home.routeName:
         return MaterialPageRoute(builder: (context) => const Home());
 
+      // Beneficary routes
       case HomeScreen.routeName:
         return MaterialPageRoute(builder: (context) => const HomeScreen());
 
@@ -38,11 +40,15 @@ class Routes {
       case DashBoardScreen.routeName:
         return MaterialPageRoute(builder: (context) => const DashBoardScreen());
 
+      // Providers routes
       case PHomeScreen.routeName:
         return MaterialPageRoute(builder: (context) => const PHomeScreen());
 
       case PProfileScreen.routeName:
         return MaterialPageRoute(builder: (context) => const PProfileScreen());
+
+      case PPatientsScreen.routeName:
+        return MaterialPageRoute(builder: (context) => const PPatientsScreen());
 
       default:
         null;

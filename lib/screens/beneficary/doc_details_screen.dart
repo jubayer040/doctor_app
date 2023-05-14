@@ -1,9 +1,9 @@
-import 'package:doctor_app/widgets/doc_details_widgets/docd_appbar.dart';
-import 'package:doctor_app/widgets/doc_details_widgets/docd_top_delegate.dart';
-import 'package:doctor_app/widgets/doc_details_widgets/docd_info_item1.dart';
-import 'package:doctor_app/widgets/doc_details_widgets/docd_info_item2.dart';
-import 'package:doctor_app/widgets/doc_details_widgets/docd_info_item3.dart';
-import 'package:doctor_app/widgets/doc_details_widgets/docd_navbar.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/doc_details_widgets/docd_appbar.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/doc_details_widgets/docd_top_delegate.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/doc_details_widgets/docd_info_item1.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/doc_details_widgets/docd_info_item2.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/doc_details_widgets/docd_info_item3.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/doc_details_widgets/docd_navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/constants/home_const.dart';
 
