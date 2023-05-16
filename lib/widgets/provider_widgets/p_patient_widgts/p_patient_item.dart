@@ -17,7 +17,7 @@ class PPatientItem extends StatelessWidget {
     final endTime =
         DateFormat.jm().format(DateTime.now().add(const Duration(minutes: 30)));
     return Container(
-      height: 160,
+      height: 165,
       width: size.width,
       margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 7),
       padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 7),
@@ -49,6 +49,7 @@ class PPatientItem extends StatelessWidget {
             ),
           ),
           const Spacer(),
+          const Divider(),
           // location & view Button
           const PPItemBottomContainer(),
         ],
