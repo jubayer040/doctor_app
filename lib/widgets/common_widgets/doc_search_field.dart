@@ -22,6 +22,7 @@ class DocSearchField extends StatelessWidget {
             child: TextField(
               controller: controller,
               autofocus: false,
+              enabled: false,
               textInputAction: TextInputAction.search,
               textCapitalization: TextCapitalization.words,
               decoration: const InputDecoration(

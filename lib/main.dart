@@ -11,20 +11,15 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        FocusScope.of(context).requestFocus(FocusNode());
-      },
-      child: MaterialApp(
-        title: 'Flutter Demo',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.deepPurple,
-          scaffoldBackgroundColor: ashhLight,
-        ),
-        onGenerateRoute: Routes.onGenerateRoute,
-        initialRoute: Home.routeName,
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+        scaffoldBackgroundColor: ashhLight,
       ),
+      onGenerateRoute: Routes.onGenerateRoute,
+      initialRoute: Home.routeName,
     );
   }
 }
