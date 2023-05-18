@@ -10,6 +10,7 @@ class HomeAppbar extends StatelessWidget {
       backgroundColor: ashhLight,
       elevation: 10,
       pinned: true,
+      automaticallyImplyLeading: false,
       title: Image.asset(
         'assets/welcome_logo2.png',
         height: 60,

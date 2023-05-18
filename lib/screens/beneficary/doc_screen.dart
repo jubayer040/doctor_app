@@ -27,11 +27,17 @@ class DoctorsScreen extends StatelessWidget {
               'Our Providers',
               style: TextStyle(color: homeAppBar),
             ),
-            actions: const [SizedBox(width: 20), DocFilterIcon()],
           ),
-          const SliverPadding(
-            padding: EdgeInsets.all(20),
-            sliver: SliverToBoxAdapter(child: DocSearchField()),
+          SliverPadding(
+            padding: const EdgeInsets.all(20),
+            sliver: SliverToBoxAdapter(
+              child: Row(
+                children: const [
+                  Expanded(child: DocSearchField()),
+                  DocFilterIcon(),
+                ],
+              ),
+            ),
           ),
           const HomeDoctorList(),
         ],

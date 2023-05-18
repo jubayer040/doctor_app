@@ -43,6 +43,47 @@ class DocFilterIcon extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 20),
+            SingleChildScrollView(
+              clipBehavior: Clip.none,
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: List.generate(
+                  categories.length,
+                  (i) => Container(
+                    margin: const EdgeInsets.only(right: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 55,
+                          width: 55,
+                          padding: const EdgeInsets.all(7),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(14),
+                            gradient: bodyGradient,
+                            boxShadow: bodyShadow,
+                          ),
+                          child: Image.asset(categories[i].img,
+                              fit: BoxFit.contain),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          i == 0 ? '' : categories[i].title,
+                          overflow: TextOverflow.ellipsis,
+                          style:
+                              const TextStyle(color: homeAppBar, fontSize: 11),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
             const Text('data1'),
             const SizedBox(height: 20),
             const Text('data22'),
