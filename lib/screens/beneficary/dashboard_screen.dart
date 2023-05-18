@@ -1,6 +1,6 @@
 import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/home_const_get.dart';
-import 'package:doctor_app/widgets/beneficary_widgets/dashboard_widgets/dash_details_body.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/dashboard_widgets/dash_top_body.dart';
 import 'package:doctor_app/widgets/beneficary_widgets/dashboard_widgets/dash_top_container.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +33,7 @@ class DashBoardScreen extends StatelessWidget {
             children: [
               DashTopContainer(size: size),
               const SizedBox(height: 10),
-              DashDetailsBody(size: size, doctors: 06, appointments: 18),
+              DashTopBody(size: size, doctors: 06, appointments: 18),
               const SizedBox(height: 20),
               const Text(
                 'Recent Appointments',

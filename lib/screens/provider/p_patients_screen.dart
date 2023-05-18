@@ -27,6 +27,7 @@ class PPatientsScreen extends StatelessWidget {
             child:
                 Padding(padding: EdgeInsets.all(15), child: DocSearchField()),
           ),
+          const SliverToBoxAdapter(child: SizedBox(height: 5)),
           SliverList(
             delegate: SliverChildBuilderDelegate(
               (context, index) => const PPatientItem(),

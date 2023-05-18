@@ -26,35 +26,35 @@ class HomeNavBar extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
+              Navigator.pushNamed(context, DashBoardScreen.routeName);
+            },
+            icon: const Icon(Icons.dashboard_outlined, color: homeSecondary),
+          ),
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, DoctorsScreen.routeName);
+            },
+            icon: const Icon(Icons.medical_services_outlined,
+                color: homeSecondary),
+          ),
+          IconButton(
+            onPressed: () {
               Navigator.pushNamed(context, VideoCallScreen.routeName);
             },
-            icon: const Icon(Icons.medical_information_outlined,
+            icon: const Icon(Icons.video_camera_front_outlined,
                 color: homeSecondary),
           ),
           IconButton(
             onPressed: () {
               Navigator.pushNamed(context, MessageScreen.routeName);
             },
-            icon:
-                const Icon(Icons.schedule_send_outlined, color: homeSecondary),
-          ),
-          IconButton(
-            onPressed: () {
-              Navigator.pushNamed(context, DoctorsScreen.routeName);
-            },
-            icon: const Icon(Icons.share, color: homeSecondary),
+            icon: const Icon(Icons.message_outlined, color: homeSecondary),
           ),
           IconButton(
             onPressed: () {
               Navigator.pushNamed(context, ProfileScreen.routeName);
             },
             icon: const Icon(Icons.people_outline, color: homeSecondary),
-          ),
-          IconButton(
-            onPressed: () {
-              Navigator.pushNamed(context, DashBoardScreen.routeName);
-            },
-            icon: const Icon(Icons.dashboard_outlined, color: homeSecondary),
           ),
         ],
       ),

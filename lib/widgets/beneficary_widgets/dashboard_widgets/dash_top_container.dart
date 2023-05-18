@@ -10,7 +10,7 @@ class DashTopContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: size.height * .12,
-      padding: const EdgeInsets.only(right: 10),
+      padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         gradient: getHomeGradient(homePrimaryColor),
         boxShadow: bodyShadow,
@@ -54,7 +54,7 @@ class DashTopContainer extends StatelessWidget {
             child: Image.asset(
               'assets/dash_img.png',
               width: size.width * .35,
-              fit: BoxFit.contain,
+              fit: BoxFit.cover,
             ),
           ),
         ],

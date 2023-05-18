@@ -9,14 +9,17 @@ class PPItemBottomContainer extends StatelessWidget {
     return Row(
       children: [
         // location
+        const Icon(Icons.location_on_outlined),
+        const SizedBox(width: 5),
         const Expanded(
           child: Text(
             'Purana Paltan,Dhaka Bangladesh',
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(color: homeSecondary, fontSize: 11),
+            style: TextStyle(color: homeSecondary, fontSize: 9),
           ),
         ),
+
         // view medical details button
         Container(
           margin: const EdgeInsets.only(left: 15),

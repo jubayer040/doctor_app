@@ -2,6 +2,7 @@ import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/home_const_get.dart';
 import 'package:doctor_app/screens/provider/p_patients_screen.dart';
 import 'package:doctor_app/screens/provider/p_profile_screen.dart';
+import 'package:doctor_app/widgets/provider_widgets/p_home_widgets/p_home_body.dart';
 import 'package:flutter/material.dart';
 
 class PHomeScreen extends StatelessWidget {
@@ -14,10 +15,11 @@ class PHomeScreen extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
+        backgroundColor: ashhLight,
         leading: getBackButton(context),
-        title: const Text('Home Screen'),
+        title: const Text('Home Screen', style: TextStyle(color: homeAppBar)),
       ),
-      body: const Center(child: Text('Providers Home Screen')),
+      body: const PHomeBody(),
       bottomNavigationBar: Container(
         height: kToolbarHeight,
         alignment: Alignment.center,
@@ -32,16 +34,16 @@ class PHomeScreen extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {
-                Navigator.pushNamed(context, PProfileScreen.routeName);
+                Navigator.pushNamed(context, PPatientsScreen.routeName);
               },
               icon: const Icon(Icons.medical_information_outlined,
                   color: homeSecondary),
             ),
             IconButton(
               onPressed: () {
-                Navigator.pushNamed(context, PPatientsScreen.routeName);
+                Navigator.pushNamed(context, PProfileScreen.routeName);
               },
-              icon: const Icon(Icons.pattern_outlined, color: homeSecondary),
+              icon: const Icon(Icons.location_history, color: homeSecondary),
             ),
             // IconButton(
             //   onPressed: () {
