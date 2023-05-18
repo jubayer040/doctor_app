@@ -1,4 +1,4 @@
-import 'package:doctor_app/screens/beneficary/home_screen.dart';
+import 'package:doctor_app/screens/home2.dart';
 import 'package:doctor_app/screens/provider/p_home_screen.dart';
 import 'package:doctor_app/widgets/beneficary_widgets/profile_widgets/profile_item.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
             icon: Icons.javascript,
             title: 'Beneficary',
             onTap: () {
-              Navigator.pushNamed(context, HomeScreen.routeName);
+              Navigator.pushNamed(context, Home2.routeName);
             },
           ),
           ProfileItem(

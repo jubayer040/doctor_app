@@ -1,15 +1,13 @@
 import 'package:doctor_app/constants/home_const.dart';
-import 'package:doctor_app/screens/beneficary/dashboard_screen.dart';
-import 'package:doctor_app/screens/beneficary/doc_screen.dart';
-import 'package:doctor_app/screens/beneficary/home_screen.dart';
-import 'package:doctor_app/screens/beneficary/message_screen.dart';
-import 'package:doctor_app/screens/beneficary/profile_screen.dart';
-import 'package:doctor_app/screens/beneficary/video_call_screen.dart';
+// import 'package:doctor_app/screens/beneficary/doc_screen.dart';
+// import 'package:doctor_app/screens/beneficary/message_screen.dart';
+// import 'package:doctor_app/screens/beneficary/profile_screen.dart';
+// import 'package:doctor_app/screens/beneficary/video_call_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeNavBar extends StatelessWidget {
-  const HomeNavBar({super.key});
-
+  const HomeNavBar({super.key, required this.selectedIndex});
+  final ValueNotifier selectedIndex;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,39 +18,45 @@ class HomeNavBar extends StatelessWidget {
         children: [
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, HomeScreen.routeName);
+              selectedIndex.value = 0;
+              //Navigator.pushNamed(context, HomeScreen.routeName);
             },
             icon: const Icon(Icons.home_outlined, color: homeSecondary),
           ),
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, DashBoardScreen.routeName);
+              selectedIndex.value = 1;
+              //Navigator.pushNamed(context, DashBoardScreen.routeName);
             },
             icon: const Icon(Icons.dashboard_outlined, color: homeSecondary),
           ),
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, DoctorsScreen.routeName);
+              selectedIndex.value = 2;
+              //Navigator.pushNamed(context, DoctorsScreen.routeName);
             },
             icon: const Icon(Icons.medical_services_outlined,
                 color: homeSecondary),
           ),
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, VideoCallScreen.routeName);
+              selectedIndex.value = 3;
+              //Navigator.pushNamed(context, VideoCallScreen.routeName);
             },
             icon: const Icon(Icons.video_camera_front_outlined,
                 color: homeSecondary),
           ),
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, MessageScreen.routeName);
+              selectedIndex.value = 4;
+              //Navigator.pushNamed(context, MessageScreen.routeName);
             },
             icon: const Icon(Icons.message_outlined, color: homeSecondary),
           ),
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, ProfileScreen.routeName);
+              selectedIndex.value = 5;
+              //Navigator.pushNamed(context, ProfileScreen.routeName);
             },
             icon: const Icon(Icons.people_outline, color: homeSecondary),
           ),

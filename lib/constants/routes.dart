@@ -6,6 +6,7 @@ import 'package:doctor_app/screens/beneficary/message_screen.dart';
 import 'package:doctor_app/screens/beneficary/profile_screen.dart';
 import 'package:doctor_app/screens/beneficary/video_call_screen.dart';
 import 'package:doctor_app/screens/home.dart';
+import 'package:doctor_app/screens/home2.dart';
 import 'package:doctor_app/screens/provider/p_home_screen.dart';
 import 'package:doctor_app/screens/provider/p_patients_screen.dart';
 import 'package:doctor_app/screens/provider/p_profile_screen.dart';
@@ -14,6 +15,9 @@ import 'package:flutter/material.dart';
 class Routes {
   static Route? onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
+      case Home2.routeName:
+        return MaterialPageRoute(builder: (context) => const Home2());
+
       case Home.routeName:
         return MaterialPageRoute(builder: (context) => const Home());
 
