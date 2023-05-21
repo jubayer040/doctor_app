@@ -34,7 +34,6 @@ class DocDetailsScreen extends StatelessWidget {
             const DocDAppBar(),
             SliverPersistentHeader(
               delegate: DocDTopDelegate(size: size),
-              floating: true,
               pinned: true,
             ),
           ],

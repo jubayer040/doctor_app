@@ -1,4 +1,4 @@
-import 'package:doctor_app/screens/home2.dart';
+import 'package:doctor_app/screens/home.dart';
 import 'package:doctor_app/screens/p_home.dart';
 import 'package:doctor_app/widgets/beneficary_widgets/profile_widgets/profile_item.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class LoginScreen extends StatelessWidget {
             icon: Icons.javascript,
             title: 'Beneficary',
             onTap: () {
-              Navigator.pushNamed(context, Home2.routeName);
+              Navigator.pushNamed(context, Home.routeName);
             },
           ),
           ProfileItem(
