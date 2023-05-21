@@ -32,7 +32,8 @@ class HomeDoctorList extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         // title
-                        getTitleText(doctors[i].title, homeAppBar),
+                        getTitleText(doctors[i].title, blueSecondary),
+                        const SizedBox(height: 5),
                         // subtitle
                         getDoctorCategory(doctors[i].subtitle),
                         // reviews & fees
@@ -63,7 +64,7 @@ class HomeDoctorList extends StatelessWidget {
           const SizedBox(width: 2),
           Text(
             title,
-            style: const TextStyle(fontSize: 11, color: homeTextColor),
+            style: const TextStyle(fontSize: 11, color: textColor),
           ),
         ],
       );

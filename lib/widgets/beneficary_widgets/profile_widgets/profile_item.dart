@@ -28,15 +28,15 @@ class ProfileItem extends StatelessWidget {
       child: ListTile(
         onTap: onTap,
         leading: CircleAvatar(
-          backgroundColor: homePrimaryColor,
+          backgroundColor: skySecondary,
           child: Icon(icon, color: Colors.white),
         ),
         title: Text(
           title,
           style: const TextStyle(
-              color: homeSecondary, fontSize: 12, letterSpacing: 1.3),
+              color: blueSecondary, fontSize: 12, letterSpacing: 1.3),
         ),
-        trailing: const Icon(Icons.arrow_forward_ios, color: homePrimaryColor),
+        trailing: const Icon(Icons.arrow_forward_ios, color: skyPrimary),
       ),
     );
   }

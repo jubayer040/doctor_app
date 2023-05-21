@@ -11,7 +11,7 @@ class DocFilterIcon extends StatelessWidget {
       onPressed: () async {
         await filterBottomSheetWidget(context);
       },
-      icon: const Icon(Icons.filter_list_outlined, color: homeAppBar),
+      icon: const Icon(Icons.filter_list_outlined, color: bluePrimary),
     );
   }
 
@@ -36,7 +36,7 @@ class DocFilterIcon extends StatelessWidget {
                   'Filters',
                   style: TextStyle(
                     fontSize: 20.0,
-                    color: homeTextColor,
+                    color: textColor,
                     fontFamily: 'poppins_semibold',
                   ),
                 )
@@ -75,7 +75,7 @@ class DocFilterIcon extends StatelessWidget {
                           i == 0 ? '' : categories[i].title,
                           overflow: TextOverflow.ellipsis,
                           style:
-                              const TextStyle(color: homeAppBar, fontSize: 11),
+                              const TextStyle(color: bluePrimary, fontSize: 11),
                         ),
                       ],
                     ),
@@ -99,7 +99,7 @@ class DocFilterIcon extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     letterSpacing: 1.3,
-                    color: homeTextColor,
+                    color: textColor,
                   ),
                 ),
               ),

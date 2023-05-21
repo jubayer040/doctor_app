@@ -30,7 +30,7 @@ class DocDInfoItem3 extends StatelessWidget {
                       ),
                     ),
                     const Text('★★★★☆'),
-                    getSubTitleText('(10)', homeAppBar),
+                    getSubTitleText('(10)', bluePrimary),
                   ],
                 ),
                 const SizedBox(width: 20),
@@ -93,7 +93,7 @@ class DocDInfoItem3 extends StatelessWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            getTitleText(doctor.title, homeSecondary),
+                            getTitleText(doctor.title, bluePrimary),
                             getSubTitleText('March 21, 2021', Colors.grey),
                           ],
                         ),

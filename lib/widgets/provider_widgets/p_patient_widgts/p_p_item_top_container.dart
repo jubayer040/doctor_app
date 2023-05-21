@@ -20,7 +20,7 @@ class PPItemTopContainer extends StatelessWidget {
             Text(
               'Dr. Shovon Ahmed',
               style: TextStyle(
-                color: homeTextColor,
+                color: textColor,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 1.3,
               ),
@@ -29,7 +29,7 @@ class PPItemTopContainer extends StatelessWidget {
             // mobile
             Text(
               '+8801628343483',
-              style: TextStyle(color: homeTextSecondary, fontSize: 10),
+              style: TextStyle(color: textSecondary, fontSize: 10),
             ),
           ],
         ),
@@ -44,7 +44,7 @@ class PPItemTopContainer extends StatelessWidget {
           ),
           child: const Text(
             'B+',
-            style: TextStyle(color: homeTextSecondary, fontSize: 15),
+            style: TextStyle(color: textColor, fontSize: 15),
           ),
         ),
       ],

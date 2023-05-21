@@ -24,10 +24,10 @@ class DocDTopDelegate extends SliverPersistentHeaderDelegate {
             ),
             child: TabBar(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
-              indicatorColor: homePrimaryColor,
+              indicatorColor: skyPrimary,
               unselectedLabelColor: Colors.grey,
               indicator: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5.5), color: homeAppBar),
+                  borderRadius: BorderRadius.circular(5.5), color: bluePrimary),
               labelColor: Colors.white,
               tabs: const [
                 Tab(text: 'OverView'),

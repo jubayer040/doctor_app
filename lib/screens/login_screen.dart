@@ -1,11 +1,11 @@
 import 'package:doctor_app/screens/home2.dart';
-import 'package:doctor_app/screens/provider/p_home_screen.dart';
+import 'package:doctor_app/screens/p_home.dart';
 import 'package:doctor_app/widgets/beneficary_widgets/profile_widgets/profile_item.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  static const routeName = '/home';
-  const Home({super.key});
+class LoginScreen extends StatelessWidget {
+  static const routeName = '/logn-screen';
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
             icon: Icons.javascript,
             title: 'Provider',
             onTap: () {
-              Navigator.pushNamed(context, PHomeScreen.routeName);
+              Navigator.pushNamed(context, PHome.routeName);
             },
           ),
         ],

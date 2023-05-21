@@ -17,10 +17,11 @@ class PPatientsScreen extends StatelessWidget {
             elevation: 10,
             backgroundColor: ashhLight,
             leading: getBackButton(context),
+            centerTitle: true,
             pinned: true,
             title: const Text(
               "Patients",
-              style: TextStyle(color: homeTextColor),
+              style: TextStyle(color: textColor),
             ),
           ),
           const SliverToBoxAdapter(

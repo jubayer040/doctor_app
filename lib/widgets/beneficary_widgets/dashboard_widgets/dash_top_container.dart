@@ -12,7 +12,7 @@ class DashTopContainer extends StatelessWidget {
       height: size.height * .12,
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
-        gradient: getHomeGradient(homePrimaryColor),
+        gradient: getHomeGradient(skySecondary),
         boxShadow: bodyShadow,
         borderRadius: BorderRadius.circular(7),
       ),
@@ -29,6 +29,7 @@ class DashTopContainer extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: textColor,
                     fontSize: 18,
                     letterSpacing: 1.3,
                     wordSpacing: 1.3,
@@ -40,6 +41,7 @@ class DashTopContainer extends StatelessWidget {
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
+                    color: textColor,
                     letterSpacing: 1.3,
                     wordSpacing: 1.3,
                     fontSize: 10,

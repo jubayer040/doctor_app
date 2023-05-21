@@ -21,7 +21,7 @@ class DocDInfoItem1 extends StatelessWidget {
             const Text(
               'Education History',
               style: TextStyle(
-                color: homeTextColor,
+                color: textColor,
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
               ),
@@ -34,7 +34,7 @@ class DocDInfoItem1 extends StatelessWidget {
             const Text(
               'Specializations',
               style: TextStyle(
-                color: homeTextColor,
+                color: textColor,
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
               ),
@@ -67,10 +67,10 @@ class DocDInfoItem1 extends StatelessWidget {
               width: 6,
               height: 6,
               decoration: const BoxDecoration(
-                  shape: BoxShape.circle, color: homeAppBar),
+                  shape: BoxShape.circle, color: bluePrimary),
             ),
             const SizedBox(width: 10),
-            getSubTitleText(title, homeAppBar),
+            getSubTitleText(title, bluePrimary),
           ],
         ),
       );

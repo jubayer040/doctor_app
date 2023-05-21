@@ -21,7 +21,7 @@ class DashTopBody extends StatelessWidget {
       padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(14),
-        gradient: getHomeGradient(homePrimaryColor),
+        gradient: getHomeGradient(skySecondary),
       ),
       child: Row(
         children: [

@@ -16,7 +16,7 @@ class PPItemBottomContainer extends StatelessWidget {
             'Purana Paltan,Dhaka Bangladesh',
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(color: homeSecondary, fontSize: 9),
+            style: TextStyle(color: textColor, fontSize: 9),
           ),
         ),
 
@@ -26,7 +26,7 @@ class PPItemBottomContainer extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
-            color: homeAppBar,
+            color: bluePrimary,
           ),
           child: const Text('View Medical Details',
               style: TextStyle(color: Colors.white, fontSize: 13)),

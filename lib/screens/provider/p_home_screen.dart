@@ -1,8 +1,7 @@
 import 'package:doctor_app/constants/home_const.dart';
 import 'package:doctor_app/constants/home_const_get.dart';
-import 'package:doctor_app/screens/provider/p_patients_screen.dart';
-import 'package:doctor_app/screens/provider/p_profile_screen.dart';
-import 'package:doctor_app/widgets/provider_widgets/p_home_widgets/p_home_body.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/dashboard_widgets/dash_t_body_item.dart';
+import 'package:doctor_app/widgets/beneficary_widgets/dashboard_widgets/dash_top_container.dart';
 import 'package:flutter/material.dart';
 
 class PHomeScreen extends StatelessWidget {
@@ -11,59 +10,75 @@ class PHomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         elevation: 0,
         backgroundColor: ashhLight,
         leading: getBackButton(context),
-        title: const Text('Home Screen', style: TextStyle(color: homeAppBar)),
+        title: const Text('Home Screen', style: TextStyle(color: bluePrimary)),
       ),
-      body: const PHomeBody(),
-      bottomNavigationBar: Container(
-        height: kToolbarHeight,
-        alignment: Alignment.center,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            IconButton(
-              onPressed: () {
-                Navigator.pushNamed(context, PHomeScreen.routeName);
-              },
-              icon: const Icon(Icons.home_outlined, color: homeSecondary),
-            ),
-            IconButton(
-              onPressed: () {
-                Navigator.pushNamed(context, PPatientsScreen.routeName);
-              },
-              icon: const Icon(Icons.medical_information_outlined,
-                  color: homeSecondary),
-            ),
-            IconButton(
-              onPressed: () {
-                Navigator.pushNamed(context, PProfileScreen.routeName);
-              },
-              icon: const Icon(Icons.location_history, color: homeSecondary),
-            ),
-            // IconButton(
-            //   onPressed: () {
-            //     Navigator.pushNamed(context, DoctorsScreen.routeName);
-            //   },
-            //   icon: const Icon(Icons.share, color: homeSecondary),
-            // ),
-            // IconButton(
-            //   onPressed: () {
-            //     Navigator.pushNamed(context, ProfileScreen.routeName);
-            //   },
-            //   icon: const Icon(Icons.people_outline, color: homeSecondary),
-            // ),
-            // IconButton(
-            //   onPressed: () {
-            //     Navigator.pushNamed(context, DashBoardScreen.routeName);
-            //   },
-            //   icon: const Icon(Icons.dashboard_outlined, color: homeSecondary),
-            // ),
-          ],
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(height: 5),
+              DashTopContainer(size: size),
+              const SizedBox(height: 15),
+              // body card
+              Container(
+                width: size.width,
+                height: 65 * 3.0,
+                padding: const EdgeInsets.all(5),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(14),
+                  gradient: getHomeGradient(skySecondary),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        DashTBodyItem(
+                          count: 1.toString(),
+                          icon: Icons.schedule_send_outlined,
+                          title: 'Total Appoinments',
+                        ),
+                        DashTBodyItem(
+                          count: 01.toString(),
+                          icon: Icons.calendar_today,
+                          title: 'Next Schedule',
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 7),
+                    Row(
+                      children: [
+                        DashTBodyItem(
+                          count: 13.toString(),
+                          icon: Icons.home_mini,
+                          title: 'Your Clients',
+                        ),
+                        DashTBodyItem(
+                          count: 2600.toString(),
+                          icon: Icons.money_outlined,
+                          title: 'Pay Bills',
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 7),
+                    const DashTBodyItem(
+                      count: '${63} %',
+                      icon: Icons.nature_people_outlined,
+                      title: 'Profile Complete',
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

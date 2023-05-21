@@ -2,12 +2,14 @@ import 'package:doctor_app/models/doctor.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/models/category.dart';
 
-const homeAppBar = Color(0xFF01204E);
-const homePrimaryColor = Color(0xFF80DDEA);
-const homeSecondary = Color.fromARGB(255, 94, 111, 136);
 const ashhLight = Color(0xFFECF6FF);
-const homeTextColor = Color(0xFF292F51);
-const homeTextSecondary = Colors.grey;
+
+const bluePrimary = Color(0xFF01204E);
+const blueSecondary = Color(0xFF0E4D7B);
+const skyPrimary = Color(0xFF30BCED);
+const skySecondary = Color(0xFFBDDDFC);
+const textColor = Color(0xFF2D2C2D);
+const textSecondary = Color(0xFFF9F9F9);
 
 const bodyGradient = LinearGradient(
   begin: Alignment.topLeft,

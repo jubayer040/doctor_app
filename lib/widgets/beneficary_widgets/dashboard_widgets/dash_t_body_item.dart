@@ -22,26 +22,29 @@ class DashTBodyItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           gradient: getHomeGradient(Colors.white),
         ),
-        child: FittedBox(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.white,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: FittedBox(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
+                      ),
+                      child: Icon(icon),
                     ),
-                    child: Icon(icon),
-                  ),
-                  Text(title),
-                ],
+                    Text(title),
+                  ],
+                ),
               ),
-              Text(count),
-            ],
-          ),
+            ),
+            Center(child: Text(count)),
+          ],
         ),
       ),
     );

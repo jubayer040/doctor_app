@@ -20,7 +20,7 @@ class HomeAppbar extends StatelessWidget {
       actions: [
         IconButton(
           onPressed: () {},
-          icon: const Icon(Icons.notifications_outlined, color: homeAppBar),
+          icon: const Icon(Icons.notifications_outlined, color: bluePrimary),
         ),
         Container(
           width: 37,

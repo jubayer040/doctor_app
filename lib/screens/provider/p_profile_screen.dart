@@ -16,7 +16,7 @@ class PProfileScreen extends StatelessWidget {
           child: Column(
             children: [
               // img circle
-              const PofileTopBody(img: 'assets/logo1.png'),
+              const PofileTopBody(img: 'assets/2.jpg'),
               ProfileItem(
                 icon: Icons.person_outlined,
                 onTap: () {},
@@ -56,6 +56,11 @@ class PProfileScreen extends StatelessWidget {
                 icon: Icons.notifications_outlined,
                 onTap: () {},
                 title: 'Notifications',
+              ),
+              ProfileItem(
+                icon: Icons.contact_page_outlined,
+                onTap: () {},
+                title: 'Contact Us',
               ),
               ProfileItem(
                 icon: Icons.logout_rounded,

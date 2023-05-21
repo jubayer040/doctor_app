@@ -45,5 +45,5 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Center get getLoadingIndicator =>
-      const Center(child: CircularProgressIndicator(color: homeSecondary));
+      const Center(child: CircularProgressIndicator(color: bluePrimary));
 }

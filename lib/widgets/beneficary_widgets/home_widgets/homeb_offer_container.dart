@@ -12,7 +12,7 @@ class HomeBOfferContainer extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
         // B2EBF2 80DDEA 4DD0E1
-        gradient: getHomeGradient(homePrimaryColor),
+        gradient: getHomeGradient(skySecondary),
         boxShadow: bodyShadow,
         borderRadius: BorderRadius.circular(21),
       ),
@@ -40,9 +40,9 @@ class HomeBOfferContainer extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      getTitleText('Dr. Al Jubayer', Colors.white),
-                      getSubTitleText('Medicine & Hear Specialist',
-                          const Color(0xB3FFFFFF)),
+                      getTitleText('Dr. Al Jubayer', blueSecondary),
+                      getSubTitleText(
+                          'Medicine & Hear Specialist', blueSecondary),
                       const SizedBox(height: 10),
                       getDoctorCategory('Good Health Clinic'),
                     ],
@@ -69,9 +69,6 @@ class HomeBOfferContainer extends StatelessWidget {
   Widget _offerText(String title) => Text(
         title,
         style: const TextStyle(
-          fontSize: 17,
-          fontWeight: FontWeight.bold,
-          color: Colors.white,
-        ),
+            fontSize: 17, letterSpacing: 1.1, color: bluePrimary),
       );
 }

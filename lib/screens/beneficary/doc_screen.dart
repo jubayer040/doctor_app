@@ -21,15 +21,15 @@ class DoctorsScreen extends StatelessWidget {
             pinned: true,
             leading: IconButton(
               onPressed: () => Navigator.pop(context),
-              icon: const Icon(Icons.arrow_back_ios_new, color: homeAppBar),
+              icon: const Icon(Icons.arrow_back_ios_new, color: bluePrimary),
             ),
             title: const Text(
               'Our Providers',
-              style: TextStyle(color: homeAppBar),
+              style: TextStyle(color: bluePrimary),
             ),
           ),
           SliverPadding(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             sliver: SliverToBoxAdapter(
               child: Row(
                 children: const [

@@ -36,12 +36,12 @@ class DocDInfoCategory extends StatelessWidget {
                         horizontal: 20, vertical: 10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(5.5),
-                      color: selected == i ? homeAppBar : Colors.transparent,
+                      color: selected == i ? bluePrimary : Colors.transparent,
                     ),
                     child: Text(
                       aboutList[i],
                       style: TextStyle(
-                        color: selected == i ? Colors.cyan : homeAppBar,
+                        color: selected == i ? blueSecondary : bluePrimary,
                         fontWeight:
                             selected == i ? FontWeight.bold : FontWeight.normal,
                       ),

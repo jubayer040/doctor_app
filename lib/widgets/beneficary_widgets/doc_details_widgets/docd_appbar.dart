@@ -11,7 +11,7 @@ class DocDAppBar extends StatelessWidget {
       backgroundColor: ashhLight,
       pinned: true,
       leading: getBackButton(context),
-      title: const Text('Dr. Info', style: TextStyle(color: homeAppBar)),
+      title: const Text('Dr. Info', style: TextStyle(color: bluePrimary)),
       actions: [
         Row(
           children: [
@@ -24,7 +24,7 @@ class DocDAppBar extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 5),
-            getSubTitleText('Active Now', homeAppBar),
+            getSubTitleText('Active Now', bluePrimary),
           ],
         ),
         const SizedBox(width: 15),

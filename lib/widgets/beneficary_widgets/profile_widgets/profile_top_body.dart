@@ -25,7 +25,7 @@ class PofileTopBody extends StatelessWidget {
               alignment: Alignment.centerLeft,
               transform: Matrix4.identity()..rotateZ(math.radians(-8)),
               child: const DecoratedBox(
-                decoration: BoxDecoration(color: homePrimaryColor),
+                decoration: BoxDecoration(color: skySecondary),
               ),
             ),
           ),
@@ -52,14 +52,14 @@ class PofileTopBody extends StatelessWidget {
                 const Text(
                   'Jb Jason',
                   style: TextStyle(
-                    color: homeTextColor,
+                    color: textColor,
                     letterSpacing: 1.3,
                     wordSpacing: 1.5,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
                 // sub-title
-                const Text('@jason', style: TextStyle(color: homeTextColor)),
+                const Text('@jason', style: TextStyle(color: textColor)),
               ],
             ),
           ),

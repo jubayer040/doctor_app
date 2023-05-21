@@ -31,7 +31,7 @@ class DocDInfoItem2 extends StatelessWidget {
                 dayColor: Colors.grey,
                 activeDayColor: Colors.white,
                 dayNameColor: Colors.grey,
-                activeBackgroundDayColor: homeAppBar,
+                activeBackgroundDayColor: bluePrimary,
                 dotsColor: Colors.white,
                 locale: 'en',
               ),
@@ -53,7 +53,7 @@ class DocDInfoItem2 extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        getTitleText(title, homeAppBar),
+        getTitleText(title, bluePrimary),
         Wrap(
           children: List.generate(
             slotList.length,
@@ -71,14 +71,14 @@ class DocDInfoItem2 extends StatelessWidget {
                         left: 10, right: 5, top: 10, bottom: 5),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(6),
-                      gradient:
-                          slot ? getHomeGradient(homeAppBar) : bodyGradient,
+                      color: slot ? bluePrimary : Colors.white60,
+                      // gradient: bodyGradient,
                       boxShadow: bodyShadow,
                     ),
                     child: Text(
                       slotList[index],
                       style: TextStyle(
-                        color: slot ? Colors.white : homeAppBar,
+                        color: slot ? Colors.white : bluePrimary,
                         fontWeight: slot ? FontWeight.bold : FontWeight.normal,
                       ),
                     ),

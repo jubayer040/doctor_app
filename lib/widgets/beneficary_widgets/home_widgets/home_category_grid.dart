@@ -34,7 +34,7 @@ class HomeCategoryGrid extends StatelessWidget {
               Text(
                 i == 0 ? '' : categories[i].title,
                 overflow: TextOverflow.ellipsis,
-                style: const TextStyle(color: homeAppBar, fontSize: 11),
+                style: const TextStyle(color: textColor, fontSize: 11),
               ),
             ],
           ),

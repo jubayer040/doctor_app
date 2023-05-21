@@ -17,11 +17,11 @@ class DashBoardScreen extends StatelessWidget {
         backgroundColor: ashhLight,
         centerTitle: true,
         leading: getBackButton(context),
-        title: const Text('DashBoard', style: TextStyle(color: homeTextColor)),
+        title: const Text('DashBoard', style: TextStyle(color: textColor)),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: const Icon(Icons.notifications_outlined, color: homeAppBar),
+            icon: const Icon(Icons.notifications_outlined, color: bluePrimary),
           ),
         ],
       ),
@@ -38,6 +38,7 @@ class DashBoardScreen extends StatelessWidget {
               const Text(
                 'Recent Appointments',
                 style: TextStyle(
+                  color: textColor,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 1.3,
                   fontSize: 18,

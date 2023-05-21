@@ -43,7 +43,7 @@ class DocSearchField extends StatelessWidget {
             width: 50,
             alignment: Alignment.center,
             decoration: BoxDecoration(
-              gradient: getHomeGradient(homeAppBar),
+              gradient: getHomeGradient(bluePrimary),
               borderRadius: BorderRadius.circular(18),
             ),
             child: const Icon(CupertinoIcons.search, color: Colors.white),

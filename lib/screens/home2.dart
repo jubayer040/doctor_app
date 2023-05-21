@@ -3,7 +3,6 @@ import 'package:doctor_app/screens/beneficary/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/screens/beneficary/dashboard_screen.dart';
 import 'package:doctor_app/screens/beneficary/doc_screen.dart';
-import 'package:doctor_app/screens/beneficary/message_screen.dart';
 import 'package:doctor_app/screens/beneficary/profile_screen.dart';
 import 'package:doctor_app/screens/beneficary/video_call_screen.dart';
 import 'package:doctor_app/widgets/beneficary_widgets/home_widgets/home_navbar.dart';
@@ -22,7 +21,6 @@ class _Home2State extends State<Home2> {
     const DoctorsScreen(),
     const DashBoardScreen(),
     const VideoCallScreen(),
-    const MessageScreen(),
     const ProfileScreen(),
   ];
 

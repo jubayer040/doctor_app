@@ -23,10 +23,10 @@ class VideoCReceiver extends StatelessWidget {
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                homeAppBar.withOpacity(.7),
-                homeAppBar.withOpacity(.8),
-                homeAppBar.withOpacity(.9),
-                homeAppBar,
+                blueSecondary.withOpacity(.7),
+                blueSecondary.withOpacity(.8),
+                blueSecondary.withOpacity(.9),
+                blueSecondary,
               ],
             ),
           ),

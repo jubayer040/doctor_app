@@ -59,12 +59,12 @@ class PPatientItem extends StatelessWidget {
 
   Row getPatientDateTime(IconData icon, String text) => Row(
         children: [
-          Icon(icon, size: 15, color: homeSecondary),
+          Icon(icon, size: 15, color: blueSecondary),
           const SizedBox(width: 5),
           Text(
             text,
             overflow: TextOverflow.ellipsis,
-            style: const TextStyle(fontSize: 11, color: homeTextColor),
+            style: const TextStyle(fontSize: 11, color: textColor),
           )
         ],
       );

@@ -32,7 +32,7 @@ class DocDTopContainer extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  getTitleText(doctor.title, homeAppBar),
+                  getTitleText(doctor.title, bluePrimary),
                   const SizedBox(height: 8),
                   getDoctorCategory(doctor.subtitle),
                   const SizedBox(height: 10),

@@ -27,10 +27,10 @@ Container getVideoIcon(IconData icon) => Container(
     );
 
 Widget getDoctorCategory(String title) => Container(
-      padding: const EdgeInsets.only(left: 7, top: 2.5, bottom: 2.5, right: 14),
+      padding: const EdgeInsets.only(left: 7, top: 3, bottom: 3, right: 14),
       margin: const EdgeInsets.only(bottom: 5),
       decoration: const BoxDecoration(
-        color: homeAppBar,
+        color: blueSecondary,
         borderRadius: BorderRadius.horizontal(
           left: Radius.circular(4),
           right: Radius.circular(14),
@@ -38,7 +38,7 @@ Widget getDoctorCategory(String title) => Container(
       ),
       child: Text(
         title,
-        style: const TextStyle(fontSize: 10, color: Colors.white),
+        style: const TextStyle(fontSize: 9, color: Colors.white),
       ),
     );
 
@@ -60,7 +60,7 @@ Widget getTitleSeeAllText(String title, Function onTap) => Row(
         Text(
           title,
           style: const TextStyle(
-            color: homeTextColor,
+            color: blueSecondary,
             fontSize: 15,
             fontWeight: FontWeight.bold,
           ),
@@ -85,7 +85,7 @@ Container getButtonStyle(Widget child) => Container(
       padding: const EdgeInsets.symmetric(horizontal: 15),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(6),
-        gradient: getHomeGradient(const Color(0xFF80DDEA)),
+        gradient: getHomeGradient(skySecondary),
         boxShadow: bodyShadow,
       ),
       child: child,
@@ -97,11 +97,11 @@ AppBar getAppbar(BuildContext context, String title, List<Widget> action) =>
       elevation: 10,
       backgroundColor: ashhLight,
       leading: getBackButton(context),
-      title: const Text('User Profile', style: TextStyle(color: homeAppBar)),
+      title: const Text('User Profile', style: TextStyle(color: bluePrimary)),
       actions: action,
     );
 
 IconButton getBackButton(BuildContext context) => IconButton(
       onPressed: () => Navigator.pop(context),
-      icon: const Icon(Icons.arrow_back_ios_new, color: homeAppBar),
+      icon: const Icon(Icons.arrow_back_ios_new, color: blueSecondary),
     );
