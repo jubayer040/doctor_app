@@ -7,25 +7,20 @@ import 'package:doctor_app/screens/beneficary/profile_screen.dart';
 import 'package:doctor_app/screens/beneficary/video_call_screen.dart';
 import 'package:doctor_app/widgets/beneficary_widgets/home_widgets/home_navbar.dart';
 
-class Home2 extends StatefulWidget {
+class Home extends StatelessWidget {
   static const routeName = '/home-2';
-  const Home2({super.key});
-  @override
-  State<Home2> createState() => _Home2State();
-}
-
-class _Home2State extends State<Home2> {
-  final selectedIndex = ValueNotifier<int>(0);
-  final pages = [
-    const HomeScreen(),
-    const DoctorsScreen(),
-    const DashBoardScreen(),
-    const VideoCallScreen(),
-    const ProfileScreen(),
-  ];
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final selectedIndex = ValueNotifier<int>(0);
+    final pages = [
+      const HomeScreen(),
+      const DoctorsScreen(),
+      const DashBoardScreen(),
+      const VideoCallScreen(),
+      const ProfileScreen(),
+    ];
     return Scaffold(
       backgroundColor: ashhLight,
       body: ValueListenableBuilder(

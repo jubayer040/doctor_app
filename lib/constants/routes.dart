@@ -5,7 +5,7 @@ import 'package:doctor_app/screens/beneficary/home_screen.dart';
 import 'package:doctor_app/screens/beneficary/profile_screen.dart';
 import 'package:doctor_app/screens/beneficary/video_call_screen.dart';
 import 'package:doctor_app/screens/login_screen.dart';
-import 'package:doctor_app/screens/home2.dart';
+import 'package:doctor_app/screens/home.dart';
 import 'package:doctor_app/screens/p_home.dart';
 import 'package:doctor_app/screens/provider/p_home_screen.dart';
 import 'package:doctor_app/screens/provider/p_patients_screen.dart';
@@ -21,8 +21,8 @@ class Routes {
       case PHome.routeName:
         return MaterialPageRoute(builder: (context) => const PHome());
 
-      case Home2.routeName:
-        return MaterialPageRoute(builder: (context) => const Home2());
+      case Home.routeName:
+        return MaterialPageRoute(builder: (context) => const Home());
 
       // Beneficary routes
       case HomeScreen.routeName:
