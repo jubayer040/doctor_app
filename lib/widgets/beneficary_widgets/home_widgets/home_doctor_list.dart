@@ -33,12 +33,16 @@ class HomeDoctorList extends StatelessWidget {
                       children: [
                         // title
                         getTitleText(doctors[i].title, blueSecondary),
-                        const SizedBox(height: 5),
                         // subtitle
                         getDoctorCategory(doctors[i].subtitle),
                         // reviews & fees
                         _reviewsAndFees(doctors[i].review, doctors[i].fees),
-                        const Divider(color: Color(0xFFBDBDBD)),
+                        Container(
+                          width: double.infinity,
+                          margin: const EdgeInsets.symmetric(vertical: 5),
+                          height: .4,
+                          color: const Color(0xFFBDBDBD),
+                        ),
                         // location
                         _locationScheduleText(
                             Icons.location_on_outlined, doctors[i].location),
@@ -64,7 +68,7 @@ class HomeDoctorList extends StatelessWidget {
           const SizedBox(width: 2),
           Text(
             title,
-            style: const TextStyle(fontSize: 11, color: textColor),
+            style: const TextStyle(fontSize: 10, color: textColor),
           ),
         ],
       );
@@ -78,7 +82,7 @@ class HomeDoctorList extends StatelessWidget {
               style: const TextStyle(color: Colors.cyan, fontSize: 10),
               children: [
                 TextSpan(
-                    text: ' $review Reviews',
+                    text: '   $review Reviews',
                     style: const TextStyle(color: Colors.cyan, fontSize: 8)),
               ],
             ),
