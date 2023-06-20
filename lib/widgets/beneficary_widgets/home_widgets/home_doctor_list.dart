@@ -37,12 +37,7 @@ class HomeDoctorList extends StatelessWidget {
                         getDoctorCategory(doctors[i].subtitle),
                         // reviews & fees
                         _reviewsAndFees(doctors[i].review, doctors[i].fees),
-                        Container(
-                          width: double.infinity,
-                          margin: const EdgeInsets.symmetric(vertical: 5),
-                          height: .4,
-                          color: const Color(0xFFBDBDBD),
-                        ),
+                        const Divider(height: .4, color: Color(0xFFBDBDBD)),
                         // location
                         _locationScheduleText(
                             Icons.location_on_outlined, doctors[i].location),

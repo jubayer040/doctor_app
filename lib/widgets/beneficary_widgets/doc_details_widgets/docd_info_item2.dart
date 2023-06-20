@@ -20,6 +20,7 @@ class DocDInfoItem2 extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // calender
             ValueListenableBuilder(
               valueListenable: selectedDate,
               builder: (context, _, __) => CalendarTimeline(
@@ -53,7 +54,9 @@ class DocDInfoItem2 extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        // title
         getTitleText(title, bluePrimary),
+        // slot list
         Wrap(
           children: List.generate(
             slotList.length,
